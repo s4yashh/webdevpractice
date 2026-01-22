@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: rgba(245, 247, 250, 1);
+    color: rgba(38, 44, 52, 1);
+}
+
+header {
+    background-color: rgba(60, 65, 75, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 25px;
+    text-align: center;
+}
+
+header p {
+    margin-top: 6px;
+    color: rgba(220, 223, 230, 1);
+}
+
+nav {
+    background-color: rgba(230, 233, 238, 1);
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid rgba(200, 205, 215, 1);
+}
+
+nav a {
+    text-decoration: none;
+    color: rgba(55, 65, 81, 1);
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+article {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 18px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+article h3 {
+    margin-top: 0;
+    color: rgba(55, 65, 81, 1);
+}
+
+aside {
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    background-color: rgba(235, 238, 242, 1);
+    padding: 18px;
+    border-radius: 6px;
+}
+
+aside h3 {
+    margin-top: 0;
+    color: rgba(60, 65, 75, 1);
+}
+
+footer {
+    background-color: rgba(60, 65, 75, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+}
