@@ -3,15 +3,23 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Segoe UI", Arial, sans-serif;
-    background-color: #ffffff;
-    color: #333e4d;
+    background: linear-gradient(
+        180deg,
+        rgba(248, 251, 255, 1),
+        rgba(235, 242, 255, 1)
+    );
+    color: rgba(43, 52, 69, 1);
 }
 
 /* HEADER */
 header {
-    background-color: #87c2f6;
-    color: white;
-    padding: 30px;
+    background: linear-gradient(
+        135deg,
+        rgba(106, 174, 255, 1),
+        rgba(79, 131, 255, 1)
+    );
+    color: rgba(255, 255, 255, 1);
+    padding: 40px;
 }
 
 header h1 {
@@ -20,46 +28,60 @@ header h1 {
 
 header p {
     margin-top: 8px;
+    color: rgba(235, 242, 255, 1);
 }
 
 /* NAVBAR */
 nav {
-    background-color: #e8f0ff;
+    background: linear-gradient(
+        90deg,
+        rgba(235, 242, 255, 1),
+        rgba(255, 255, 255, 1)
+    );
     padding: 14px;
+    border-bottom: 1px solid rgba(219, 234, 254, 1);
 }
 
 nav a {
     text-decoration: none;
-    color: #2563eb;
+    color: rgba(30, 64, 175, 1);
     font-weight: bold;
-    padding: 8px 14px;
+    padding: 8px 18px;
     margin: 0 6px;
-    border-radius: 6px;
+    border-radius: 20px;
 }
 
 nav a:hover {
-    background-color: #2563eb;
-    color: white;
+    background: linear-gradient(
+        135deg,
+        rgba(79, 131, 255, 1),
+        rgba(37, 99, 235, 1)
+    );
+    color: rgba(255, 255, 255, 1);
 }
 
 /* CONTENT SECTIONS */
 section, article {
-    background-color: white;
-    margin: 30px;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 1),
+        rgba(246, 249, 255, 1)
+    );
+    margin: 32px;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
 
 /* HEADINGS */
 h2 {
-    color: #1d4ed8;
-    border-bottom: 3px solid #e8f0ff;
+    color: rgba(30, 58, 138, 1);
+    border-bottom: 3px solid rgba(219, 234, 254, 1);
     padding-bottom: 8px;
 }
 
 h3 {
-    color: #2563eb;
+    color: rgba(37, 99, 235, 1);
 }
 
 /* LIST */
@@ -76,55 +98,77 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 18px;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 th {
-    background-color: #2563eb;
-    color: white;
-    padding: 12px;
+    background: linear-gradient(
+        135deg,
+        rgba(79, 131, 255, 1),
+        rgba(37, 99, 235, 1)
+    );
+    color: rgba(255, 255, 255, 1);
+    padding: 14px;
 }
 
 td {
     padding: 12px;
-    background-color: #f1f5ff;
+    background: linear-gradient(
+        180deg,
+        rgba(243, 246, 255, 1),
+        rgba(238, 242, 255, 1)
+    );
 }
 
 table, th, td {
-    border: 1px solid #c7d2fe;
+    border: 1px solid rgba(199, 210, 254, 1);
 }
 
 /* IMAGE */
 img {
     margin-top: 15px;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 /* BUTTON STYLE LINKS */
 section a {
     display: inline-block;
-    margin-top: 15px;
-    background-color: #6797ff;
-    color: white;
-    padding: 12px 22px;
-    border-radius: 8px;
+    margin-top: 18px;
+    background: linear-gradient(
+        135deg,
+        rgba(103, 151, 255, 1),
+        rgba(79, 124, 255, 1)
+    );
+    color: rgba(255, 255, 255, 1);
+    padding: 12px 26px;
+    border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
 }
 
 section a:hover {
-    background-color: #4476ff;
+    background: linear-gradient(
+        135deg,
+        rgba(79, 124, 255, 1),
+        rgba(53, 94, 255, 1)
+    );
 }
 
 /* FOOTER */
 footer {
-    background-color: #63b6ff;
-    color: white;
-    padding: 25px;
+    background: linear-gradient(
+        135deg,
+        rgba(99, 182, 255, 1),
+        rgba(74, 157, 240, 1)
+    );
+    color: rgba(255, 255, 255, 1);
+    padding: 28px;
     text-align: center;
 }
 
 footer a {
-    color: #e8f0ff;
+    color: rgba(235, 242, 255, 1);
     font-weight: bold;
     text-decoration: none;
 }
