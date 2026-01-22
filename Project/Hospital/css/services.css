@@ -1,0 +1,11 @@
+/* Services Page Styles */
+.intro { background-color: #e8eef2; padding: 20px; border-left: 5px solid #5a6f7d; }
+
+.service { padding: 25px; margin-bottom: 15px; background-color: #f5f5f5; border-left: 5px solid #5a6f7d; }
+.service:nth-child(even) { background-color: white; }
+.service h3 { color: #4a5f6d; }
+.service ul { list-style: none; margin-left: 0; }
+.service li:before { content: "→ "; color: #5a6f7d; font-weight: bold; margin-right: 8px; }
+
+.appointment-cta { background-color: #e8eef2; text-align: center; padding: 25px; border-left: 5px solid #5a6f7d; }
+.appointment-cta h3 { color: #4a5f6d; }

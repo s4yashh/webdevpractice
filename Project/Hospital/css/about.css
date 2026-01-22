@@ -1,0 +1,11 @@
+/* About Page Styles */
+.history, .mission, .vision { padding-left: 20px; border-left: 5px solid #5a6f7d; }
+.history { background-color: #f5f5f5; }
+.vision { background-color: #f5f5f5; }
+
+.values ul { list-style: none; margin-left: 0; }
+.values li { padding: 15px; margin-bottom: 15px; background-color: #f5f5f5; border-left: 4px solid #5a6f7d; }
+
+.facilities { background-color: #f5f5f5; }
+.accreditations ul { list-style: none; }
+.accreditations li:before { content: "★ "; color: #5a6f7d; font-weight: bold; margin-right: 8px; }
