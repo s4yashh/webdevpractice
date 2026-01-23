@@ -1,11 +1,63 @@
-/* Services Page Styles */
-.intro { background-color: #e8f5f0; padding: 20px; border-left: 5px solid #4a9d85; }
+.page-title {
+    background-color: #e8f5f0;
+    padding: 20px;
+    margin: 0 0 20px 0;
+    border: 3px solid #4a9d85;
+}
 
-.service { padding: 25px; margin-bottom: 15px; background-color: #f7f9fa; border-left: 5px solid #4a9d85; }
-.service:nth-child(even) { background-color: white; }
-.service h3 { color: #016A82; }
-.service ul { list-style: none; margin-left: 0; }
-.service li:before { content: "→ "; color: #4a9d85; font-weight: bold; margin-right: 8px; }
+.intro { 
+    background-color: #e8f5f0; 
+    padding: 20px; 
+    border-left: 5px solid #4a9d85;
+    margin: 0 0 20px 0;
+}
 
-.appointment-cta { background-color: #e8f5f0; text-align: center; padding: 25px; border-left: 5px solid #4a9d85; }
-.appointment-cta h3 { color: #016A82; }
+.service { 
+    padding: 25px; 
+    margin: 0 0 15px 0; 
+    background-color: #f7f9fa; 
+    border-left: 5px solid #4a9d85;
+}
+
+.service h3 { 
+    color: #016A82;
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+
+.service p {
+    color: #333;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.service ul {
+    margin: 10px 0 0 30px;
+    padding: 0;
+}
+
+.service li {
+    color: #333;
+    margin: 0 0 8px 0;
+    padding: 5px 0 5px 10px;
+    border-left: 2px solid #4a9d85;
+}
+
+.appointment-cta { 
+    background-color: #e8f5f0; 
+    padding: 25px; 
+    border: 5px solid #4a9d85;
+    margin: 0;
+}
+
+.appointment-cta h3 { 
+    color: #016A82;
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+
+.appointment-cta p {
+    color: #333;
+    margin: 0 0 10px 0;
+    padding: 0;
+}

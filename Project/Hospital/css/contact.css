@@ -1,13 +1,66 @@
-/* Contact Page Styles */
-.info-block { padding: 20px; margin-bottom: 15px; background-color: #f7f9fa; border-left: 5px solid #4a9d85; }
-.info-block h4 { color: #016A82; margin-bottom: 10px; }
+.page-title {
+    background-color: #e8f5f0;
+    padding: 20px;
+    margin: 0 0 20px 0;
+    border: 3px solid #4a9d85;
+}
 
-.contact-form-section { background-color: #fef9e7; padding: 25px; }
-.contact-form label { display: block; margin-bottom: 5px; font-weight: bold; color: #016A82; }
-.contact-form input, .contact-form textarea { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; font-family: Arial, sans-serif; }
-.contact-form input:focus, .contact-form textarea:focus { border-color: #4a9d85; outline: none; }
-.contact-form button { padding: 12px 25px; margin-right: 10px; border: none; cursor: pointer; font-size: 16px; }
-.contact-form button[type="submit"] { background-color: #4a9d85; color: white; }
-.contact-form button[type="submit"]:hover { background-color: #3b8570; }
-.contact-form button[type="reset"] { background-color: #666; color: white; }
-.contact-form button[type="reset"]:hover { background-color: #444; }
+.contact-info {
+    background-color: white;
+    padding: 25px;
+    margin: 0 0 20px 0;
+    border: 2px solid #e2e8f0;
+}
+
+.info-block { 
+    padding: 20px; 
+    margin: 0 0 15px 0; 
+    background-color: #f7f9fa; 
+    border-left: 5px solid #4a9d85;
+}
+
+.info-block h4 { 
+    color: #016A82; 
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.info-block p {
+    color: #333;
+    margin: 0 0 8px 0;
+    padding: 0;
+}
+
+.info-block a {
+    color: #018aa3;
+}
+
+.info-block a:hover {
+    color: #016A82;
+}
+
+.office-hours {
+    background-color: #f7f9fa;
+    padding: 25px;
+    margin: 0 0 20px 0;
+    border: 2px solid #e2e8f0;
+}
+
+.office-hours h3 {
+    color: #016A82;
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+
+.department-directory {
+    background-color: white;
+    padding: 25px;
+    margin: 0 0 20px 0;
+    border: 2px solid #e2e8f0;
+}
+
+.department-directory h3 {
+    color: #016A82;
+    margin: 0 0 15px 0;
+    padding: 0;
+}

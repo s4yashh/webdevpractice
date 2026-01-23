@@ -1,11 +1,69 @@
-/* About Page Styles */
-.history, .mission, .vision { padding-left: 20px; border-left: 5px solid #4a9d85; }
-.history { background-color: #f7f9fa; }
-.vision { background-color: #f7f9fa; }
+.page-title {
+    background-color: #e8f5f0;
+    padding: 20px;
+    margin: 0 0 20px 0;
+    border: 3px solid #4a9d85;
+}
 
-.values ul { list-style: none; margin-left: 0; }
-.values li { padding: 15px; margin-bottom: 15px; background-color: #f7f9fa; border-left: 4px solid #4a9d85; }
+.history, .mission, .vision { 
+    padding: 20px 20px 20px 25px; 
+    border-left: 5px solid #4a9d85;
+    margin: 0 0 20px 0;
+}
 
-.facilities { background-color: #f7f9fa; }
-.accreditations ul { list-style: none; }
-.accreditations li:before { content: "★ "; color: #4a9d85; font-weight: bold; margin-right: 8px; }
+.history { 
+    background-color: #f7f9fa; 
+}
+
+.mission {
+    background-color: white;
+}
+
+.vision { 
+    background-color: #f7f9fa; 
+}
+
+.values {
+    background-color: white;
+    padding: 20px;
+    margin: 0 0 20px 0;
+}
+
+.values ul {
+    margin: 15px 0 0 0;
+    padding: 0;
+}
+
+.values li { 
+    padding: 15px; 
+    margin: 0 0 15px 0; 
+    background-color: #f7f9fa; 
+    border-left: 4px solid #4a9d85;
+    color: #333;
+}
+
+.facilities { 
+    background-color: #f7f9fa; 
+    padding: 20px;
+    margin: 0 0 20px 0;
+    border: 2px solid #e2e8f0;
+}
+
+.accreditations {
+    background-color: white;
+    padding: 20px;
+    margin: 0 0 20px 0;
+}
+
+.accreditations ul {
+    margin: 15px 0 0 0;
+    padding: 0;
+}
+
+.accreditations li {
+    padding: 10px 10px 10px 15px;
+    margin: 0 0 10px 0;
+    border-left: 3px solid #4a9d85;
+    background-color: #f7f9fa;
+    color: #333;
+}
