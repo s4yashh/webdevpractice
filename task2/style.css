@@ -1,77 +1,53 @@
 body {
     margin: 0;
     padding: 30px;
-    font-family: "Segoe UI", Arial, sans-serif;
-    background-color: rgba(245, 247, 250, 1);
-    color: rgba(33, 37, 41, 1);
-    line-height: 1.6;
+    background-color: #fef3c7;
 }
 
 h1 {
-    text-align: center;
-    color: rgba(45, 55, 72, 1);
-    margin-bottom: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #ffcb72;
+    color: white;
 }
 
 h3 {
-    color: rgba(55, 65, 81, 1);
-    margin-top: 30px;
+    margin: 30px 0 10px 0;
+    padding: 5px;
+    color: #d97706;
 }
 
 hr {
     width: 70%;
-    margin: 20px auto;
-    border: 1px solid rgba(200, 205, 215, 1);
+    margin: 20px;
+    border: 1px solid #fbbf24;
 }
 
 ul {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: white;
     padding: 20px 40px;
-    border-radius: 6px;
-    border: 1px solid rgba(220, 225, 230, 1);
+    border: 2px solid #fbbf24;
+    margin: 15px;
 }
 
 ul li {
-    margin-bottom: 8px;
+    color: #92400e;
 }
 
 ol {
-    background-color: rgba(250, 251, 253, 1);
+    background-color: white;
     padding: 20px 40px;
-    border-radius: 6px;
-    border: 1px solid rgba(220, 225, 230, 1);
+    border: 2px solid #fbbf24;
+    margin: 15px;
 }
 
 ol li {
-    margin-bottom: 8px;
+    color: #92400e;
 }
 
 dl {
-    background-color: rgba(255, 255, 255, 1);
-    padding: 20px 30px;
-    border-radius: 6px;
-    border: 1px solid rgba(220, 225, 230, 1);
-}
-
-dt {
-    color: rgba(30, 64, 175, 1);
-    margin-top: 12px;
-}
-
-dd {
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
-
-strong {
-    color: rgba(30, 64, 175, 1);
-}
-
-em {
-    color: rgba(100, 60, 20, 1);
-}
-
-mark {
-    background-color: rgba(255, 235, 170, 1);
-    padding: 2px 6px;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #fbbf24;
+    margin: 15px;
 }

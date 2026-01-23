@@ -1,168 +1,213 @@
-body {
+* {
     margin: 0;
     padding: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: linear-gradient(
-        180deg,
-        rgba(248, 251, 255, 1),
-        rgba(235, 242, 255, 1)
-    );
-    color: rgba(43, 52, 69, 1);
+}
+
+body {
+    background-color: #f8fafc;
 }
 
 header {
-    background: linear-gradient(
-        135deg,
-        rgba(106, 174, 255, 1),
-        rgba(79, 131, 255, 1)
-    );
-    color: rgba(255, 255, 255, 1);
-    padding: 40px;
+    background-color: #1e40af;
+    padding: 40px 20px;
+    color: white;
+    border: 3px solid #3a5191;
 }
 
 header h1 {
-    margin: 0;
+    color: white;
+    margin: 0 0 10px 0;
+    padding: 0;
 }
 
 header p {
-    margin-top: 8px;
-    color: rgba(235, 242, 255, 1);
+    color: #dbeafe;
+    margin: 0;
+    padding: 0;
 }
 
 nav {
-    background: linear-gradient(
-        90deg,
-        rgba(235, 242, 255, 1),
-        rgba(255, 255, 255, 1)
-    );
-    padding: 14px;
-    border-bottom: 1px solid rgba(219, 234, 254, 1);
+    background-color: #3b82f6;
+    padding: 15px 20px;
+    margin: 0;
+    border: 2px solid #2563eb;
 }
 
 nav a {
-    text-decoration: none;
-    color: rgba(30, 64, 175, 1);
-    font-weight: bold;
-    padding: 8px 18px;
-    margin: 0 6px;
-    border-radius: 20px;
+    color: white;
+    margin: 0 5px;
+    padding: 10px 20px;
+    background-color: #2563eb;
+    border: 2px solid #1e40af;
 }
 
 nav a:hover {
-    background: linear-gradient(
-        135deg,
-        rgba(79, 131, 255, 1),
-        rgba(37, 99, 235, 1)
-    );
-    color: rgba(255, 255, 255, 1);
+    background-color: #1e40af;
+    color: #dbeafe;
 }
 
-section, article {
-    background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 1),
-        rgba(246, 249, 255, 1)
-    );
-    margin: 32px;
+#courses {
+    background-color: white;
+    margin: 30px;
     padding: 30px;
-    border-radius: 14px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    border: 2px solid #cbd5e1;
 }
 
-h2 {
-    color: rgba(30, 58, 138, 1);
-    border-bottom: 3px solid rgba(219, 234, 254, 1);
-    padding-bottom: 8px;
+#courses h2 {
+    color: #1e40af;
+    background-color: #eff6ff;
+    padding: 15px;
+    margin: 0 0 20px 0;
+    border: 2px solid #bfdbfe;
 }
 
-h3 {
-    color: rgba(37, 99, 235, 1);
+#courses h3 {
+    color: #1e40af;
+    margin: 20px 0 10px 0;
+    padding: 10px 0;
 }
 
-ul {
-    padding-left: 22px;
+#courses p {
+    color: #334155;
+    margin: 10px 0;
+    padding: 5px 0;
 }
 
-li {
-    margin-bottom: 8px;
+#courses ul {
+    background-color: #f8fafc;
+    padding: 20px 20px 20px 40px;
+    margin: 15px 0;
+    border: 2px solid #e2e8f0;
+}
+
+#courses li {
+    color: #334155;
+    margin: 8px 0;
+    padding: 5px 0;
 }
 
 table {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 18px;
-    border-radius: 12px;
-    overflow: hidden;
+    border: 2px solid #3b82f6;
+    margin: 20px 0;
+    background-color: white;
 }
 
 th {
-    background: linear-gradient(
-        135deg,
-        rgba(79, 131, 255, 1),
-        rgba(37, 99, 235, 1)
-    );
-    color: rgba(255, 255, 255, 1);
-    padding: 14px;
+    background-color: #3b82f6;
+    padding: 15px;
+    border: 2px solid #2563eb;
+    color: white;
 }
 
 td {
     padding: 12px;
-    background: linear-gradient(
-        180deg,
-        rgba(243, 246, 255, 1),
-        rgba(238, 242, 255, 1)
-    );
+    border: 2px solid #93c5fd;
+    background-color: #f0f9ff;
+    color: #334155;
 }
 
-table, th, td {
-    border: 1px solid rgba(199, 210, 254, 1);
+#faculty {
+    background-color: white;
+    margin: 30px;
+    padding: 30px;
+    border: 2px solid #cbd5e1;
 }
 
-img {
-    margin-top: 15px;
-    border-radius: 10px;
+#faculty h2 {
+    color: #1e40af;
+    background-color: #eff6ff;
+    padding: 15px;
+    margin: 0 0 20px 0;
+    border: 2px solid #bfdbfe;
+}
+
+#faculty p {
+    color: #334155;
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+aside {
+    background-color: #fefce8;
+    margin: 30px;
+    padding: 30px;
+    border: 2px solid #fde047;
+}
+
+aside h2 {
+    color: #854d0e;
+    background-color: #fef9c3;
+    padding: 15px;
+    margin: 0 0 20px 0;
+    border: 2px solid #fde047;
+}
+
+blockquote {
+    background-color: white;
+    margin: 15px 0;
+    padding: 20px;
+    border: 2px solid #fde047;
+    color: #713f12;
+}
+
+section {
+    background-color: white;
+    margin: 30px;
+    padding: 30px;
+    border: 2px solid #cbd5e1;
+}
+
+section h2 {
+    color: #1e40af;
+    background-color: #eff6ff;
+    padding: 15px;
+    margin: 0 0 20px 0;
+    border: 2px solid #bfdbfe;
+}
+
+section p {
+    color: #334155;
+    padding: 10px 0;
+    margin: 10px 0;
 }
 
 section a {
-    display: inline-block;
-    margin-top: 18px;
-    background: linear-gradient(
-        135deg,
-        rgba(103, 151, 255, 1),
-        rgba(79, 124, 255, 1)
-    );
-    color: rgba(255, 255, 255, 1);
-    padding: 12px 26px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
+    color: white;
+    background-color: #3b82f6;
+    padding: 12px 30px;
+    margin: 10px 0;
+    border: 2px solid #2563eb;
 }
 
 section a:hover {
-    background: linear-gradient(
-        135deg,
-        rgba(79, 124, 255, 1),
-        rgba(53, 94, 255, 1)
-    );
+    background-color: #1e40af;
+    color: #dbeafe;
 }
 
 footer {
-    background: linear-gradient(
-        135deg,
-        rgba(99, 182, 255, 1),
-        rgba(74, 157, 240, 1)
-    );
-    color: rgba(255, 255, 255, 1);
-    padding: 28px;
-    text-align: center;
+    background-color: #1e40af;
+    padding: 30px 20px;
+    margin: 0;
+    color: white;
+    border: 3px solid #1e3a8a;
+}
+
+footer p {
+    color: #dbeafe;
+    margin: 10px 0;
+    padding: 5px 0;
 }
 
 footer a {
-    color: rgba(235, 242, 255, 1);
-    font-weight: bold;
-    text-decoration: none;
+    color: #dbeafe;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #2563eb;
+    border: 2px solid #3b82f6;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    background-color: #3b82f6;
+    color: white;
 }
