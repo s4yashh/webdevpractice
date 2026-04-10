@@ -1,71 +1,88 @@
 .hero {
-    background-color: white;
-    padding: 40px 30px;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafb 100%);
+    padding: 40px 36px;
     margin: 0 0 40px 0;
-    border: 2px solid #e0e0e0;
+    border: 1px solid #e0e8f0;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(15, 95, 115, 0.08);
 }
 
 .hero h2 {
-    margin: 0 0 10px 0;
+    margin: 0 0 12px 0;
     padding: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
 }
 
 .hero p {
-    margin: 0 0 20px 0;
+    margin: 0 0 16px 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 .hero img {
-    width: 500px;
-    margin: 15px 0 0 0;
-    border: 2px solid #016A82;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px 0 0 0;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(15, 95, 115, 0.12);
 }
 
 .introduction {
-    background-color: #f1f7f9;
-    padding: 30px;
+    background: linear-gradient(135deg, #eef6f9 0%, #f0f8fb 100%);
+    padding: 32px 36px;
     margin: 0 0 40px 0;
-    border-left: 5px solid #016A82;
+    border-radius: 12px;
+    border: 1px solid #d0e8f0;
+    box-shadow: 0 4px 12px rgba(15, 95, 115, 0.06);
 }
 
 .highlights {
-    background-color: white;
-    padding: 30px;
+    background: white;
+    padding: 32px 36px;
     margin: 0 0 40px 0;
-    border: 2px solid #e0e0e0;
+    border: 1px solid #e0e8f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(15, 95, 115, 0.06);
 }
 
 .highlights ul {
-    margin: 10px 0 0 30px;
+    margin: 16px 0 0 24px;
 }
 
 .services-overview {
-    background-color: #f1f7f9;
-    padding: 30px;
+    background: linear-gradient(135deg, #eef6f9 0%, #f0f8fb 100%);
+    padding: 32px 36px;
     margin: 0 0 40px 0;
-    border-left: 5px solid #016A82;
+    border-radius: 12px;
+    border: 1px solid #d0e8f0;
+    box-shadow: 0 4px 12px rgba(15, 95, 115, 0.06);
 }
 
 .statistics {
-    background-color: white;
-    padding: 30px;
+    background: white;
+    padding: 32px 36px;
     margin: 0 0 40px 0;
-    border: 2px solid #e0e0e0;
+    border: 1px solid #e0e8f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(15, 95, 115, 0.06);
 }
 
 .cta {
-    background-color: #016A82;
+    background: linear-gradient(90deg, #0f5f73 0%, #127a8c 100%);
     color: white;
-    padding: 40px;
+    padding: 48px 40px;
     margin: 0;
-    border: 3px solid #014d5f;
+    border-radius: 16px;
+    box-shadow: 0 12px 32px rgba(15, 95, 115, 0.2);
 }
 
 .cta h3 {
     color: white;
-    margin: 0 0 10px 0;
+    margin: 0 0 12px 0;
 }
 
 .cta p {
-    color: #dbeafe;
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.6;
 }
