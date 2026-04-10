@@ -56,5 +56,45 @@ export const doctors = [
     experience: '12+ years in pediatric care.',
     hours: 'Mon-Sat, 10 AM - 2 PM',
     image: '/images/doctor2.jpg'
+  },
+  {
+    name: 'Dr. Vikram Singh',
+    specialty: 'Neurologist',
+    qualification: 'MD, DM (Neurology)',
+    experience: '16+ years in neurology and neurosurgery.',
+    hours: 'Tue, Wed, Fri, 11 AM - 3 PM',
+    image: '/images/doctor1.jpg'
+  },
+  {
+    name: 'Dr. Meera Desai',
+    specialty: 'Orthopedic Surgeon',
+    qualification: 'MS (Orthopedics)',
+    experience: '14+ years in joint replacement and sports medicine.',
+    hours: 'Mon-Thu, 2 PM - 6 PM',
+    image: '/images/doctor2.jpg'
+  },
+  {
+    name: 'Dr. Arun Kumar',
+    specialty: 'Pulmonologist',
+    qualification: 'MD, DM (Respiratory)',
+    experience: '17+ years in respiratory diseases and critical care.',
+    hours: 'Mon, Tue, Thu, Sat, 10 AM - 1 PM',
+    image: '/images/doctor1.jpg'
+  },
+  {
+    name: 'Dr. Anjali Verma',
+    specialty: 'Dermatologist',
+    qualification: 'MD (Dermatology)',
+    experience: '11+ years in skin and cosmetic treatments.',
+    hours: 'Tue-Fri, 4 PM - 7 PM',
+    image: '/images/doctor2.jpg'
+  },
+  {
+    name: 'Dr. Sanjay Nair',
+    specialty: 'Gastroenterologist',
+    qualification: 'MD, DM (Gastroenterology)',
+    experience: '13+ years in GI disorders and endoscopy.',
+    hours: 'Wed, Thu, Sat, 9 AM - 1 PM',
+    image: '/images/doctor1.jpg'
   }
 ];
