@@ -570,10 +570,6 @@ footer p {
   }
 }
 
-/* ============================================
-   MODERN HOMEPAGE STYLES
-   ============================================ */
-
 .hero-main {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -665,7 +661,6 @@ footer p {
   box-shadow: 0 20px 50px rgba(15, 95, 115, 0.15);
 }
 
-/* Stats Section */
 .stats-section {
   margin: 60px 0 80px;
   padding: 40px 0;
@@ -699,7 +694,6 @@ footer p {
   font-weight: 500;
 }
 
-/* Features Section */
 .features-section {
   margin: 80px 0;
   text-align: center;
@@ -745,7 +739,6 @@ footer p {
   line-height: 1.6;
 }
 
-/* CTA Section */
 .cta-section {
   background: linear-gradient(90deg, #0f5f73 0%, #127a8c 100%);
   border-radius: 20px;
@@ -780,7 +773,6 @@ footer p {
   box-shadow: 0 10px 30px rgba(255, 255, 255, 0.4);
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
   .hero-main {
     grid-template-columns: 1fr;
@@ -825,10 +817,6 @@ footer p {
     padding: 40px 24px;
   }
 }
-
-/* ============================================
-   DOCTORS PAGE STYLES
-   ============================================ */
 
 .doctors-intro {
   background: linear-gradient(135deg, #eef6f9 0%, #f0f8fb 100%);
@@ -946,7 +934,6 @@ footer p {
   box-shadow: 0 20px 40px rgba(15, 95, 115, 0.15), 0 0 0 3px rgba(15, 95, 115, 0.1);
 }
 
-/* Doctors CTA Section */
 .doctors-cta {
   background: linear-gradient(135deg, #ffffff 0%, #f8fafb 100%);
   border: 1px solid #e0e8f0;
@@ -970,7 +957,6 @@ footer p {
   margin-right: auto;
 }
 
-/* Responsive Design for Doctors */
 @media (max-width: 1024px) {
   .doctor-grid {
     grid-template-columns: repeat(2, 1fr);

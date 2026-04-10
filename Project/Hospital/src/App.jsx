@@ -55,7 +55,6 @@ class App extends Component {
   renderHome() {
     return (
       <>
-        {/* Main Hero Section */}
         <section className="hero-main">
           <div className="hero-content">
             <h2 className="hero-title">Modern Healthcare with Human Compassion</h2>
@@ -88,7 +87,6 @@ class App extends Component {
           </div>
         </section>
 
-        {/* Stats Section */}
         <section className="stats-section">
           <div className="stats-container">
             {hospitalStats.slice(0, 4).map((item) => (
@@ -100,7 +98,6 @@ class App extends Component {
           </div>
         </section>
 
-        {/* Key Features Section */}
         <section className="features-section">
           <h2 className="section-title">Why Choose Health Plus Hospital</h2>
           <div className="features-grid">
@@ -119,7 +116,6 @@ class App extends Component {
           </div>
         </section>
 
-        {/* CTA Section */}
         <section className="cta-section">
           <div className="cta-content">
             <h2>Ready to Experience Quality Care?</h2>
