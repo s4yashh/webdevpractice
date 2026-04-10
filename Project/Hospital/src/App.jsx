@@ -14,6 +14,10 @@ class App extends Component {
 
   handleNavClick = (event, page) => {
     event.preventDefault();
+    this.navigateToPage(page);
+  };
+
+  navigateToPage = (page) => {
     this.setState({ activePage: page, mobileMenuOpen: false, formMessage: '' });
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -40,55 +44,90 @@ class App extends Component {
     event.target.reset();
   };
 
+  renderPageBanner = (title, subtitle) => (
+    <section className="page-banner card">
+      <p className="page-banner-chip">Health Plus Hospital</p>
+      <h2>{title}</h2>
+      <p>{subtitle}</p>
+    </section>
+  );
+
   renderHome() {
     return (
       <>
-        <section className="hero card">
-          <div className="hero-text">
-            <h2>Welcome to Health Plus Hospital</h2>
-            <p>Your trusted partner in health and wellness.</p>
-            <p className="subcopy">Advanced care, experienced doctors, and compassionate treatment for every patient.</p>
+        {/* Main Hero Section */}
+        <section className="hero-main">
+          <div className="hero-content">
+            <h2 className="hero-title">Modern Healthcare with Human Compassion</h2>
+            <p className="hero-subtitle">Health Plus Hospital delivers quality treatment, emergency response, and specialist consultation under one roof.</p>
+            <p className="hero-description">We combine cutting-edge medical technology with personalized patient care to ensure the best outcomes for your family.</p>
+            
+            <div className="hero-cta-group">
+              <button type="button" className="primary-action btn-lg" onClick={() => this.navigateToPage('Contact')}>
+                Book Appointment
+              </button>
+              <button type="button" className="secondary-action btn-lg" onClick={() => this.navigateToPage('Services')}>
+                View Services
+              </button>
+            </div>
+
+            <div className="hero-info-row">
+              <div className="info-item">
+                <p className="info-label">Emergency Hotline</p>
+                <p className="info-value">+1-800-HOSPITAL</p>
+              </div>
+              <div className="info-item">
+                <p className="info-label">Available 24/7</p>
+                <p className="info-value">For Critical Care</p>
+              </div>
+            </div>
           </div>
-          <img src="/images/hospital.jpg" alt="Health Plus Hospital Building" />
+
+          <div className="hero-image">
+            <img src="/images/hospital.jpg" alt="Health Plus Hospital" />
+          </div>
         </section>
 
-        <section className="grid grid-2">
-          <article className="card">
-            <h3>Why Choose Us?</h3>
-            <ul className="icon-list">
-              <li>Experienced medical professionals</li>
-              <li>Modern equipment and facilities</li>
-              <li>Patient-centered care</li>
-              <li>24/7 emergency services</li>
-            </ul>
-          </article>
-
-          <article className="card gradient">
-            <h3>Need Medical Assistance?</h3>
-            <p>Contact us today to schedule an appointment or for emergency services.</p>
-            <p><strong>Emergency Hotline:</strong> +1-800-HOSPITAL</p>
-            <p><strong>General Enquiries:</strong> +1-800-123-4568</p>
-          </article>
+        {/* Stats Section */}
+        <section className="stats-section">
+          <div className="stats-container">
+            {hospitalStats.slice(0, 4).map((item) => (
+              <div key={item.metric} className="stat-item">
+                <p className="stat-value">{item.value}</p>
+                <p className="stat-label">{item.metric}</p>
+              </div>
+            ))}
+          </div>
         </section>
 
-        <section className="card">
-          <h3>Hospital Statistics</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>Metric</th>
-                <th>Value</th>
-              </tr>
-            </thead>
-            <tbody>
-              {hospitalStats.map((item) => (
-                <tr key={item.metric}>
-                  <td>{item.metric}</td>
-                  <td>{item.value}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+        {/* Key Features Section */}
+        <section className="features-section">
+          <h2 className="section-title">Why Choose Health Plus Hospital</h2>
+          <div className="features-grid">
+            <article className="feature-card">
+              <h3>Expert Specialists</h3>
+              <p>Over 150+ experienced doctors across all major specialties.</p>
+            </article>
+            <article className="feature-card">
+              <h3>24/7 Emergency Care</h3>
+              <p>Round-the-clock emergency services with immediate response.</p>
+            </article>
+            <article className="feature-card">
+              <h3>Modern Facilities</h3>
+              <p>Latest medical technology and equipment for precise diagnosis.</p>
+            </article>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="cta-section">
+          <div className="cta-content">
+            <h2>Ready to Experience Quality Care?</h2>
+            <p>Schedule your appointment today or visit our emergency department</p>
+            <button type="button" className="primary-action btn-lg" onClick={() => this.navigateToPage('Contact')}>
+              Get in Touch
+            </button>
+          </div>
         </section>
       </>
     );
@@ -97,13 +136,10 @@ class App extends Component {
   renderAbout() {
     return (
       <>
-        <section className="card">
-          <h2>About Health Plus Hospital</h2>
-          <p>
-            Established in 2010, Health Plus Hospital has grown from a small team to one of the most trusted healthcare institutions,
-            serving over 50,000 patients annually.
-          </p>
-        </section>
+        {this.renderPageBanner(
+          'About Health Plus Hospital',
+          'Established in 2010, we have grown into one of the most trusted healthcare institutions, serving 50,000+ patients every year.'
+        )}
         <section className="grid grid-2">
           <article className="card">
             <h3>Our Mission</h3>
@@ -132,10 +168,10 @@ class App extends Component {
   renderServices() {
     return (
       <>
-        <section className="card">
-          <h2>Our Medical Services</h2>
-          <p>Comprehensive medical services with experienced doctors and modern facilities.</p>
-        </section>
+        {this.renderPageBanner(
+          'Our Medical Services',
+          'Comprehensive treatment options delivered by experienced specialists with modern facilities.'
+        )}
         <section className="service-grid">
           {services.map((service) => (
             <article key={service.name} className="card service-card">
@@ -151,10 +187,15 @@ class App extends Component {
   renderDoctors() {
     return (
       <>
-        <section className="card">
-          <h2>Our Medical Team</h2>
-          <p>Our qualified doctors are dedicated to providing excellent patient care.</p>
+        {this.renderPageBanner(
+          'Our Medical Team',
+          'Meet our qualified doctors dedicated to safe, compassionate, and effective patient care.'
+        )}
+        
+        <section className="doctors-intro">
+          <p>Our team of highly experienced and compassionate doctors are committed to providing exceptional care and treatment.</p>
         </section>
+
         <section className="doctor-grid">
           {doctors.map((doctor) => {
             const selected = this.state.highlightedDoctor === doctor.name;
@@ -167,15 +208,27 @@ class App extends Component {
                 role="button"
                 tabIndex={0}
               >
-                <img src={doctor.image} alt={doctor.name} />
-                <h3>{doctor.name}</h3>
-                <p className="specialty">{doctor.specialty}</p>
-                <p>{doctor.qualification}</p>
-                <p>{doctor.experience}</p>
-                <p><strong>Hours:</strong> {doctor.hours}</p>
+                <div className="doctor-image-wrapper">
+                  <img src={doctor.image} alt={doctor.name} />
+                </div>
+                <div className="doctor-info">
+                  <h3>{doctor.name}</h3>
+                  <p className="specialty">{doctor.specialty}</p>
+                  <p className="qualification">{doctor.qualification}</p>
+                  <p className="experience">{doctor.experience}</p>
+                  <p className="hours"><strong>Hours:</strong> {doctor.hours}</p>
+                </div>
               </article>
             );
           })}
+        </section>
+
+        <section className="doctors-cta">
+          <h2>Ready to Book an Appointment?</h2>
+          <p>Our doctors are available for consultation throughout the week. Schedule your appointment now.</p>
+          <button type="button" className="primary-action btn-lg" onClick={() => this.navigateToPage('Contact')}>
+            Book Appointment
+          </button>
         </section>
       </>
     );
@@ -184,8 +237,12 @@ class App extends Component {
   renderContact() {
     return (
       <>
+        {this.renderPageBanner(
+          'Contact Us',
+          'Get in touch with our hospital team for appointments, emergency support, and general enquiries.'
+        )}
+
         <section className="card">
-          <h2>Contact Us</h2>
           <p>123 Medical Lane, Healthcare City, HC 12345</p>
           <p><strong>Emergency (24/7):</strong> +1-800-123-4567</p>
           <p><strong>Appointments:</strong> +1-800-123-4569</p>
